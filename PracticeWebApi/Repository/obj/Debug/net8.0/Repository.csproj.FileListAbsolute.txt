@@ -36,3 +36,4 @@ C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Repository\obj\De
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Repository\obj\Debug\net8.0\Repository.genruntimeconfig.cache
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Repository\obj\Debug\net8.0\Repository.sourcelink.json

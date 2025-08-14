@@ -185,10 +185,11 @@ C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\ob
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PracticeWebApi.props
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PracticeWebApi.props
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\Practice.17F245C5.Up2Date
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\PracticeWebApi.dll
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\refint\PracticeWebApi.dll
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\PracticeWebApi.pdb
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\PracticeWebApi.genruntimeconfig.cache
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\ref\PracticeWebApi.dll
+C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\PracticeWebApi.sourcelink.json
+C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\PracticeWebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

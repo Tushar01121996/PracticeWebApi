@@ -20,3 +20,4 @@ C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Domain\obj\Debug\
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\Neosoft\New_folder\Jenkins_PracticeApi\PracticeWebApi\Domain\obj\Debug\net8.0\Domain.sourcelink.json
