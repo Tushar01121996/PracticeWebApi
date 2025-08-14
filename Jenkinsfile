@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/your-repo.git'
+                git branch: 'main', url: 'https://github.com/Tushar01121996/PracticeWebApi.git'
             }
         }
 
@@ -41,7 +41,7 @@ pipeline {
             steps {
                 echo 'Deploying to local IIS...'
                 // Example: Copy published files to IIS site folder
-                bat 'xcopy /y /s published "C:\\inetpub\\wwwroot\\MyApi"'
+                bat 'xcopy /y /s published "C:\\inetpub\\wwwroot\\PracticeWebApiJenkins"'
             }
         }
     }
