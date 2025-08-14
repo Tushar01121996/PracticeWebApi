@@ -7,7 +7,7 @@ namespace PracticeWebApi.Controllers
 {
 
     [ApiController]
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     public class CustomerController : ControllerBase
     {
