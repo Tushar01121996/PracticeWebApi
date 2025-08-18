@@ -39,7 +39,9 @@ pipeline {
 
 stage('Deploy (Local IIS)') {
     steps {
+dir('PracticeWebApi') {
         bat 'dotnet publish PracticeWebApi/PracticeWebApi.csproj -c Release -o "C:\\inetpub\\wwwroot\\PracticeWebApiJenkins"'
+}
     }
 }
 
