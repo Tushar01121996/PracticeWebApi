@@ -16,7 +16,7 @@ pipeline {
 
         stage('Restore') {
             steps {
-                bat 'dotnet restore'
+                bat 'dotnet restore PracticeWebApi.sln'
             }
         }
 
@@ -28,13 +28,13 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'dotnet test --no-build --configuration Release'
+                bat 'dotnet test PracticeWebApi.sln --no-build --configuration Release'
             }
         }
 
         stage('Publish') {
             steps {
-                bat 'dotnet publish --configuration Release -o published'
+                bat 'dotnet publish PracticeWebApi.sln --configuration Release -o published'
             }
         }
 
