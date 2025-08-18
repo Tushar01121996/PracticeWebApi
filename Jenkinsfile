@@ -1,10 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        // Make sure dotnet is installed on Jenkins machine
-        // If installed globally, you can skip this block
-    }
+  
     
     triggers {
         pollSCM('* * * * *')  // every 1 min
