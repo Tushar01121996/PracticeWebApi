@@ -14,27 +14,33 @@ pipeline {
             }
         }
 
+         stages {
         stage('Restore') {
             steps {
-                bat 'dotnet restore PracticeWebApi.sln'
+                dir("${WORKSPACE}") {
+                    bat 'dotnet restore PracticeWebApi.sln'
+                }
             }
         }
-
         stage('Build') {
             steps {
-                bat 'dotnet build --configuration Release'
+                dir("${WORKSPACE}") {
+                    bat 'dotnet build PracticeWebApi.sln --configuration Release'
+                }
             }
         }
-
         stage('Test') {
             steps {
-                bat 'dotnet test PracticeWebApi.sln --no-build --configuration Release'
+                dir("${WORKSPACE}") {
+                    bat 'dotnet test PracticeWebApi.sln --no-build --configuration Release'
+                }
             }
         }
-
         stage('Publish') {
             steps {
-                bat 'dotnet publish PracticeWebApi.sln --configuration Release -o published'
+                dir("${WORKSPACE}") {
+                    bat 'dotnet publish PracticeWebApi/PracticeWebApi.csproj -c Release -o "C:\\inetpub\\wwwroot\\PracticeWebApi"'
+                }
             }
         }
 
