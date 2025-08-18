@@ -35,13 +35,14 @@ pipeline {
             }
         }
 
-        stage('Deploy (Local IIS)') {
-            steps {
-                echo 'Deploying to local IIS...'
-                // Example: Copy published files to IIS site folder
-                bat 'xcopy /y /s published "C:\\inetpub\\wwwroot\\PracticeWebApiJenkins"'
-            }
-        }
+       
+
+stage('Deploy (Local IIS)') {
+    steps {
+        bat 'dotnet publish PracticeWebApi/PracticeWebApi.csproj -c Release -o "C:\\inetpub\\wwwroot\\PracticeWebApiJenkins"'
+    }
+}
+
     }
 
     post {
