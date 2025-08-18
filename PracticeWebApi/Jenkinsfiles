@@ -1,0 +1,58 @@
+pipeline {
+    agent any
+
+  
+    
+    triggers {
+        pollSCM('* * * * *')  // every 1 min
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Tushar01121996/PracticeWebApi.git'
+            }
+        }
+        stage('Restore') {
+            steps {
+                dir('PracticeWebApi') {
+                    bat 'dotnet restore PracticeWebApi.sln'
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('PracticeWebApi') {
+                    bat 'dotnet build PracticeWebApi.sln -c Release'
+                }
+            }
+        }
+        stage('Publish') {
+            steps {
+                dir('PracticeWebApi') {
+                    bat 'dotnet publish PracticeWebApi.sln -c Release -o publish'
+                }
+            }
+        }
+
+       
+
+stage('Deploy (Local IIS)') {
+    steps {
+dir('PracticeWebApi') {
+        bat 'dotnet publish PracticeWebApi/PracticeWebApi.csproj -c Release -o "C:\\inetpub\\wwwroot\\PracticeWebApiJenkins"'
+}
+    }
+}
+
+    }
+
+    post {
+        success {
+            echo '✅ Build & Deploy Successful!'
+        }
+        failure {
+            echo '❌ Build Failed!'
+        }
+    }
+}
