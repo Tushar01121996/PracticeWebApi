@@ -13,8 +13,6 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Tushar01121996/PracticeWebApi.git'
             }
         }
-
-         stages {
         stage('Restore') {
             steps {
                 dir("${WORKSPACE}") {
